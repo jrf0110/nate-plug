@@ -1,0 +1,30 @@
+////////////
+// Score  //
+////////////
+
+
+.score {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+
+  opacity: 1;
+
+  transition: 0.2s ease-out;
+  transition-property: opacity, top;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba( 0,0,0, 0.7 );
+
+  &.hide {
+    top: -100px;
+    opacity: 0;
+  }
+
+  > .hint {
+    font-size: 0.7em;
+  }
+}

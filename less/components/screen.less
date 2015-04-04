@@ -1,0 +1,34 @@
+////////////
+// Screen //
+////////////
+
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 32px;
+
+  border-width: 5px;
+  border-style: solid;
+
+  opacity: 1;
+
+  transition: 0.3s ease-out;
+  transition-property: opacity, top;
+
+  color: #fff;
+  text-align: center;
+
+  &.hide {
+    top: -105%;
+    opacity: 0;
+  }
+}
+
+.screen-theme( @bg-color ){
+  background: fade( @bg-color, 50% );
+  border-color: fade( @bg-color, 80% );
+}

@@ -1,0 +1,31 @@
+//////////
+// Hand //
+//////////
+
+.hand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  > img {
+    max-width: 100%;
+  }
+
+  transition: top ease-in 0.1s;
+
+
+  > img {
+    display: inline-block;
+    transform: rotate(0);
+    transition: transform 0.6s linear;
+  }
+
+  &.plug-attempt {
+    top: -50px;
+  }
+
+  &.death > img {
+    transform: translate3d( 1200px, -1200px, 0 ) rotate( 768deg );
+  }
+}

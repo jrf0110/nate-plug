@@ -1,0 +1,28 @@
+//////////////////////
+// Damage Indicator //
+//////////////////////
+
+
+.damage-indicator {
+  @indicator-size: 50px;
+
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  opacity: 1;
+
+  transition: 0.2s ease-out;
+  transition-property: opacity, top;
+
+  > .damage-item {
+    display: inline-block;
+    width: @indicator-size;
+    height: @indicator-size;
+  }
+
+  &.hide {
+    top: -@indicator-size - 5;
+    opacity: 0;
+  }
+}
