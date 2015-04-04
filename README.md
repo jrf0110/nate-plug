@@ -16,3 +16,9 @@ npm start
 ```
 
 Then open your browser to http://localhost:8080
+
+`npm start` will watch for changes in the source directories and re-build on the fly. It will also start a web server on port 8080. If you don't want to start a webserver and serve the files from your own, you'll need to build the source:
+
+```
+./node_modules/.bin/gulp build
+```
